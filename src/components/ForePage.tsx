@@ -19,6 +19,7 @@ const ForePage: React.FC = () => {
     // Optional: Update on resize
     const handleResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
+    console.log('width: ', width)
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 

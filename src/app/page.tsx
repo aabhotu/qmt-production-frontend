@@ -1,11 +1,9 @@
 import ForePage from "@/components/ForePage";
-import Project from "@/components/Project";
-import Product from "@/components/Product/Product";
+// import Project from "@/components/Project";
 // import FAQ from "@/components/FAQ";
 // import Logos from "@/components/Logos";
-import Intro from "@/components/Intro/IntroInfo";
-import Container from "@/components/Container";
-import Section from "@/components/Section";
+// import Container from "@/components/Container";
+// import Section from "@/components/Section";
 // import Stats from "@/components/Stats";
 // import CTA from "@/components/CTA";
 
@@ -14,23 +12,23 @@ const HomePage: React.FC = () => {
     <>
       <ForePage />
       {/* <Logos /> */}
-      <Container>
-        <Intro />
+      {/* <Container> */}
+        {/* <Intro /> */}
 
-        <Section id="products" title="Sản Phẩm" description="">
+        {/* <Section id="products" title="Sản Phẩm" description="">
           <Product />
-        </Section>
+        </Section> */}
 
-        <Section id="projects" title="Các dự án tiêu biểu" description="">
+        {/* <Section id="projects" title="Các dự án tiêu biểu" description="">
           <Project />
-        </Section>
+        </Section> */}
 
         {/* <FAQ /> */}
 
         {/* <Stats /> */}
 
         {/* <CTA /> */}
-      </Container>
+      {/* </Container> */}
     </>
   );
 };

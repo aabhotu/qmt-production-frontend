@@ -3,19 +3,19 @@ import { IMenuItem } from "@/types";
 export const menuItems: IMenuItem[] = [
   {
     text: "Trang chủ",
-    url: "#mainPage",
+    url: "/",
   },
   {
     text: "Giới thiệu",
-    url: "#about",
+    url: "/intro",
   },
   {
     text: "Sản phẩm",
-    url: "#products",
+    url: "/products",
   },
   {
     text: "Dự án",
-    url: "#projects",
+    url: "/project",
   },
   {
     text: "Liên hệ",

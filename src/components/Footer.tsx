@@ -6,7 +6,7 @@ import { FiMapPin } from "react-icons/fi";
 
 import { siteDetails } from "@/data/siteDetails";
 import { footerDetails } from "@/data/footer";
-import { getPlatformIconByName } from "@/utils";
+// import { getPlatformIconByName } from "@/utils";
 
 const Footer: React.FC = () => {
   return (
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
           </p>
         </div>
         <div>
-          <h4 className="text-lg font-semibold mb-4">Liên hệ</h4>
+          <h4 className="text-lg font-semibold mb-4">Liên hệ tooi</h4>
           {footerDetails.email && (
             <a
               href={`mailto:${footerDetails.email}`}
@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
                       key={platformName}
                       aria-label={platformName}
                     >
-                      {getPlatformIconByName(platformName)}
+                      {/* {getPlatformIconByName(platformName)} */}
                     </Link>
                   );
                 }
