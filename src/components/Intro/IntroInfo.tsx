@@ -4,7 +4,7 @@ import { introInfo } from "@/data/introInfo";
 const IntroComp: React.FC = () => {
   return (
     <div id="about" className="py-16 px-4 bg-white">
-      <h2 className="text-center mb-12 text-3xl lg:text-5xl font-extrabold text-gray-900">
+      <h2 className="text-center mb-12 text-3xl lg:text-5xl font-bold text-gray-900">
         Giới thiệu
       </h2>
 
