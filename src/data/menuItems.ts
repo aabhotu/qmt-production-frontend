@@ -19,6 +19,6 @@ export const menuItems: IMenuItem[] = [
   },
   {
     text: "Liên hệ",
-    url: "#contact",
+    url: "/contract",
   },
 ];

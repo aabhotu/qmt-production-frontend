@@ -3,8 +3,8 @@ import { IProject } from "@/types";
 
 export const projects: IProject[] = [
   {
-    name: "Ban tôn giáo tỉnh Thái Nguyên",
-    imageSrc: "/images/ban_ton_giao.jpg",
+    name: "Villa tại Ciputral, Hà Nội",
+    imageSrc: "/images/villa_ciputral.png",
   },
   {
     name: "Biệt thự khu vực Crown Villas",
@@ -22,8 +22,8 @@ export const projects: IProject[] = [
     name: "Biệt thự khu đô thị Linh Đàm",
     imageSrc: "/images/biet_thu_linh_dam.png",
   },
-  {
-    name: "Villa tại Ciputral, Hà Nội",
-    imageSrc: "/images/villa_ciputral.png",
+    {
+    name: "Ban tôn giáo tỉnh Thái Nguyên",
+    imageSrc: "/images/ban_ton_giao.jpg",
   },
 ];

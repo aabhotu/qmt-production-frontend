@@ -4,32 +4,35 @@ import { projects } from "@/data/project";
 
 const Project: React.FC = () => {
   return (
-    <div className="grid gap-14 max-w-lg w-full mx-auto lg:gap-8 lg:grid-cols-3 lg:max-w-full">
+    <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto px-4">
       {projects.map((project, index) => (
-        <div key={index} className="">
-          <div className="flex items-center mb-4 w-full justify-center lg:justify-start">
-            {/* <Image
-                            src={testimonial.avatar}
-                            alt={`${testimonial.name} avatar`}
-                            width={50}
-                            height={50}
-                            className="rounded-full shadow-md"
-                        /> */}
-            <div className="ml-4">
-              <h3 className="text-lg font-semibold text-secondary">
-                {project.name}
-              </h3>
-              {/* <p className="text-sm text-foreground-accent">{testimonial.role}</p> */}
-            </div>
-          </div>
+        <div
+          key={index}
+          className={`bg-white rounded-lg transition duration-300 overflow-hidden ${
+            project.name === "Bowdershaw"
+              ? "ring-4 ring-blue-500 shadow-2xl scale-[1.02]"
+              : "shadow hover:shadow-lg"
+          }`}
+        >
           <Image
             src={project.imageSrc}
-            alt={`${project.name} avatar`}
-            width={350}
-            height={250}
-            className=""
+            alt={project.name}
+            width={500}
+            height={300}
+            className="w-full h-64 object-cover transform transition-transform duration-300 hover:scale-105"
           />
-          {/* <p className="text-foreground-accent text-center lg:text-left">&quot;{testimonial.message}&quot;</p> */}
+
+          <div className="p-4 text-center lg:text-left">
+            <h3
+              className={`font-semibold ${
+                project.name === "Bowdershaw"
+                  ? "text-red-600 text-xl"
+                  : "text-blue-700 text-lg"
+              }`}
+            >
+              {project.name}
+            </h3>
+          </div>
         </div>
       ))}
     </div>
