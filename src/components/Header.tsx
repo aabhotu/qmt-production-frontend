@@ -23,11 +23,11 @@ const Header: React.FC = () => {
   const getLinkClass = (url: string) =>
     `relative font-semibold transition-all duration-300 ease-in-out 
     after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] 
-    after:bg-blue-600 after:transition-all after:duration-300 after:ease-in-out 
+    after:bg-[#00B207] after:transition-all after:duration-300 after:ease-in-out 
     ${
       pathname === url
-        ? "text-blue-700 font-bold after:w-full"
-        : "text-gray-800 hover:text-blue-600 after:w-0 hover:after:w-full"
+        ? "text-[#00B207] font-bold after:w-full"
+        : "text-gray-800 hover:text-[#2C742F] after:w-0"
     }`;
 
   return (
@@ -49,13 +49,13 @@ const Header: React.FC = () => {
                 {siteDetails.siteName}
               </span>
             </Link>
-            <span className="hidden md:inline text-sm font-medium text-gray-600 leading-tight">
+            <span className="hidden md:inline text-base font-medium text-gray-600 leading-tight">
               CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ỨNG DỤNG CÔNG NGHỆ QUANG MINH
             </span>
           </div>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex space-x-6 text-sm font-semibold text-gray-800">
+          <ul className="hidden md:flex space-x-6 text-lg font-semibold text-gray-800">
             {menuItems.map((item) => (
               <li key={item.text}>
                 <Link href={item.url} className={getLinkClass(item.url)}>
