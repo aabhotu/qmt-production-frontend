@@ -77,7 +77,7 @@ const ProductColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
     <>
       <div
         className={clsx(
-          "w-full max-w-sm mx-auto bg-white rounded-xl border border-gray-200 lg:max-w-full relative transition-transform duration-200 hover:scale-105 hover:shadow-2xl",
+          "group flex flex-col justify-between w-3/4 h-[550px] max-w-sm mx-auto bg-white rounded-xl border border-[#E5E5E5] lg:max-w-full relative transition-transform duration-200 hover:scale-105 hover:shadow-2xl hover:border-[#2C742F] hover:shadow-[#2C742F]",
           {
             "shadow-lg": highlight,
           },
@@ -90,10 +90,8 @@ const ProductColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
             Nổi bật
           </span>
         )}
-        <div className="p-5 border-b border-gray-200 rounded-t-xl">
-          <h3 className="text-xl font-semibold mb-2 text-center">{name}</h3>
-        </div>
-        <div className="p-4 mt-1 relative h-auto ">
+        
+        <div className="p-4 mt-1 relative h-[356px] flex items-center justify-center">
           <Image
             key={"0"}
             src={imageSrc}
@@ -105,6 +103,93 @@ const ProductColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
             alt="img"
             className="relative mt-1 md:mt-5 mx-auto z-10"
           />
+        </div>
+        <div className="p-5">
+          <h3 className="text-xl font-medium mb-1 text-gray-700">{name}</h3>
+          <div className="flex justify-between items-center text-center">
+            <h3 className="text-xl font-semibold text-[#1A1A1A]">$1000</h3>
+            <div className="h-[40px] w-[40px] bg-[#F2F2F2] rounded-full flex items-center justify-center group-hover:bg-[#00B207]">
+              <Image 
+              src="/images/Bag.svg"
+              width={20}
+              height={20}
+              key={"0"}
+              quality={100}
+              priority={true}
+              unoptimized={true}
+              alt="img"
+              className="block group-hover:hidden"
+              />
+              <Image 
+              src="/images/BagWhite.svg"
+              width={20}
+              height={20}
+              key={"0"}
+              quality={100}
+              priority={true}
+              unoptimized={true}
+              alt="img"
+              className="hidden group-hover:block"
+              />
+            </div>
+          </div>
+          <div className="flex space-x-1">
+            <Image 
+              src="/images/Group.svg"
+              width={13}
+              height={13}
+              key={"0"}
+              quality={100}
+              priority={true}
+              unoptimized={true}
+              alt="img"
+              className=""
+            />
+            <Image 
+              src="/images/Group.svg"
+              width={13}
+              height={13}
+              key={"0"}
+              quality={100}
+              priority={true}
+              unoptimized={true}
+              alt="img"
+              className=""
+            />
+            <Image 
+              src="/images/Group.svg"
+              width={13}
+              height={13}
+              key={"0"}
+              quality={100}
+              priority={true}
+              unoptimized={true}
+              alt="img"
+              className=""
+            />
+            <Image 
+              src="/images/Group.svg"
+              width={13}
+              height={13}
+              key={"0"}
+              quality={100}
+              priority={true}
+              unoptimized={true}
+              alt="img"
+              className=""
+            />
+            <Image 
+              src="/images/Group.svg"
+              width={13}
+              height={13}
+              key={"0"}
+              quality={100}
+              priority={true}
+              unoptimized={true}
+              alt="img"
+              className=""
+            />
+          </div>
         </div>
       </div>
 
