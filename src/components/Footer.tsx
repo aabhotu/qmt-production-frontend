@@ -98,8 +98,8 @@ const Footer: React.FC = () => {
       </div>
       <BackToTopButton />
       <hr className="max-w-[1500px] mx-auto px-4 border-t border-[#1D421B]"/>
-      <div className=" flex max-w-[1500px] mx-auto mt-6 text-center text-[#618062] text-base justify-between items-center">
-        <div className="flex space-x-1">
+      <div className=" flex md:flex-row max-w-[1500px] mx-auto mt-6 text-center text-[#618062] text-base justify-between items-center">
+        <div className="hidden md:flex space-x-1 md">
           <Image 
             src="/images/Social Media.svg"
             width={40}
@@ -145,10 +145,12 @@ const Footer: React.FC = () => {
             className=""
           />
         </div>
+        <div className="mx-auto text-center">
         <p>
           &copy; {new Date().getFullYear()} {siteDetails.siteName}. All rights reserved.
         </p>
-        <div className="flex space-x-1">
+        </div>
+        <div className="hidden md:flex space-x-1">
           <Image 
             src="/images/ApplePay.svg"
             width={0}
