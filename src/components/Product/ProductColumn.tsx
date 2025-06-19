@@ -107,7 +107,7 @@ const ProductColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
         <div className="p-5">
           <h3 className="text-xl font-medium mb-1 text-gray-700">{name}</h3>
           <div className="flex justify-between items-center text-center">
-            <h3 className="text-xl font-semibold text-[#1A1A1A]">$1000</h3>
+            <h3 className="text-xl font-semibold text-[#1A1A1A]">$$$$</h3>
             <div className="h-[40px] w-[40px] bg-[#F2F2F2] rounded-full flex items-center justify-center group-hover:bg-[#00B207]">
               <Image 
               src="/images/Bag.svg"
@@ -210,7 +210,7 @@ const ProductColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
               ×
             </button>
             <div className="flex flex-col">
-              <h2 className="text-3xl font-extrabold mb-4 text-left text-gray-900">
+              <h2 className="text-3xl font-base mb-4 text-left text-gray-900">
                 {name}
               </h2>
               {(briefInfo || description) && (
@@ -228,8 +228,8 @@ const ProductColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
                   <hr className="my-4 border-gray-200" />
                 </div>
               )}
-              <div className="flex flex-row  gap-8 max-h-[60vh]">
-                <div className="flex-shrink-0 flex items-center">
+              <div className="flex flex-col md:flex-row gap-8 max-h-[60vh]">
+                <div className="flex-shrink-0 flex justify-center md:items-start w-full md:w-auto">
                   <Image
                     src={imageSrc}
                     quality={100}
