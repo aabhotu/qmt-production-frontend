@@ -18,6 +18,9 @@ const config: Config = {
         "foreground-accent": "var(--foreground-accent)",
         "hero-background": "var(--hero-background)",
       },
+        backgroundImage: {
+    'project-gradient': 'linear-gradient(to right, #f0f4ff, #ffffff)',
+  },
     },
   },
   plugins: [],
