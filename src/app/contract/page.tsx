@@ -2,118 +2,133 @@
 
 import { motion } from "framer-motion";
 
-
 // Animation variants
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2,
-      duration: 0.8,
-      ease: "easeInOut",
+      staggerChildren: 0.3,
+      when: "beforeChildren",
     },
   },
 };
 
 const fadeInUp = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 40 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.6,
-      ease: "easeInOut",
+      ease: "easeOut",
+    },
+  },
+};
+
+const zoomIn = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
     },
   },
 };
 
 const ContactPage: React.FC = () => {
   return (
-    <div id="contract" title="" className="py-16 bg-blue-50 scroll-smooth">
+    <section
+      id="contact"
+      className="py-20 bg-gradient-to-br from-blue-100 via-white to-indigo-50 shadow-inner"
+    >
       <motion.div
+        className="container mx-auto px-6"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.3 }}
         variants={containerVariants}
       >
+        {/* Heading */}
         <motion.h2
-          className="text-3xl md:text-5xl font-bold text-center text-red-700 mb-4 tracking-wide uppercase"
+          className="text-4xl md:text-5xl font-extrabold text-center text-indigo-700 mb-6 uppercase tracking-wider"
           variants={fadeInUp}
         >
           Liên hệ với chúng tôi
         </motion.h2>
 
         <motion.h4
-          className="text-lg md:text-2xl font-semibold text-center text-gray-700 mb-10 max-w-4xl mx-auto leading-relaxed"
+          className="text-lg md:text-2xl text-center text-slate-700 font-medium mb-12 max-w-3xl mx-auto leading-relaxed"
           variants={fadeInUp}
         >
           Công Ty Cổ Phần Sản Xuất Và Ứng Dụng Công Nghệ Quang Minh
         </motion.h4>
 
-        <motion.div
-          className="flex flex-col lg:flex-row gap-10"
-          variants={fadeInUp}
-        >
-          {/* Google Map */}
-          <div className="w-full bg-blue-50 p-4 shadow-md rounded-lg">
-            <h3 className="text-xl font-semibold text-gray-800 mb-4">
-              BẢN ĐỒ GOOGLEMAP
-            </h3>
+        {/* Map */}
+          <motion.div
+            className="rounded-xl overflow-hidden shadow-lg mb-16"
+            variants={zoomIn}
+          >
             <iframe
-              title="Google Map"
-              src="https://www.google.com/maps/embed?pb=..." // Thay bằng URL nhúng hợp lệ
+              title="Google Map - Công ty Quang Minh"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195477.72139202907!2d105.5324324!3d21.355957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313527006c5203d1%3A0xc08dbf5ee29ae9ff!2sVIKKO%20C%C3%B4ng%20ty%20CPSX%20%26%20%C6%AFD%20C%C3%B4ng%20ngh%E1%BB%87%20Quang%20Minh!5e0!3m2!1sen!2s!4v1719221436463!5m2!1sen!2s"
               width="100%"
-              height="500"
+              height="450"
               loading="lazy"
-              className="rounded border"
+              allowFullScreen
+              className="w-full border-none"
             ></iframe>
-          </div>
-        </motion.div>
+          </motion.div>
 
-        {/* THÔNG TIN LIÊN HỆ */}
+        {/* Contact Info */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 mx-5"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
           variants={containerVariants}
         >
           {[
             {
               icon: "🏠",
-              title: "TRỤ SỞ CHÍNH",
+              title: "Trụ sở chính",
               content:
-                "Số nhà 20A, Tổ 8, Phường Chùa Hang, Thành phố Thái Nguyên, Tỉnh Thái Nguyên",
+                "Số nhà 20A, Tổ 8, Phường Chùa Hang, TP Thái Nguyên, Tỉnh Thái Nguyên",
             },
             {
               icon: "📍",
-              title: "CHI NHÁNH MIỀN NAM",
+              title: "Chi nhánh miền Nam",
               content: "Long Đức 2, Tam Phước, Biên Hoà, Đồng Nai",
             },
             {
               icon: "📞",
-              title: "HOTLINE",
+              title: "Hotline",
               content: "0825098189 - 0919340925",
             },
             {
               icon: "✉️",
-              title: "EMAIL",
+              title: "Email",
               content: "congtyquangminh20a@gmail.com",
             },
-          ].map((item, i) => (
+          ].map((item, index) => (
             <motion.div
-              key={i}
-              className="border shadow-md p-5 rounded-md bg-white text-center flex flex-col items-center transition duration-300 ease-in-out hover:shadow-lg hover:scale-105 hover:border-red-500"
+              key={index}
               variants={fadeInUp}
-              transition={{ delay: i * 0.15 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+              className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl border-t-4 border-indigo-500 transition-all duration-300 text-center"
             >
-              <h4 className="font-bold text-xl mb-2 text-red-500 uppercase tracking-wide">
-                {item.icon} {item.title}
-              </h4>
+              <div className="text-4xl mb-3 bg-indigo-100 text-indigo-600 rounded-full p-3 w-fit mx-auto shadow-sm">
+                {item.icon}
+              </div>
+              <h5 className="font-bold text-lg text-indigo-700 uppercase mb-2">
+                {item.title}
+              </h5>
               <p className="text-gray-700 font-medium">{item.content}</p>
             </motion.div>
           ))}
         </motion.div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 

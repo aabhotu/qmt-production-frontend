@@ -9,6 +9,7 @@ import { FiMapPin } from "react-icons/fi";
 import { siteDetails } from "@/data/siteDetails";
 import { footerDetails } from "@/data/footer";
 import BackToTopButton from "./ui/ScrollToTop";
+import FloatingButtons from "./ui/FloatingButtons";
 // import { getPlatformIconByName } from "@/utils";
 
 const Footer: React.FC = () => {
@@ -96,7 +97,11 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
+      <FloatingButtons />
+      <div className="fixed bottom-4 right-4 z-40">
       <BackToTopButton />
+</div>
+
       <hr className="max-w-[1500px] mx-auto px-4 border-t border-[#1D421B]"/>
       <div className=" flex md:flex-row max-w-[1500px] mx-auto mt-6 text-center text-[#618062] text-base justify-between items-center">
         <div className="hidden md:flex space-x-1 md">

@@ -33,7 +33,7 @@ const BackToTopButton = () => {
         style={{
           position: 'fixed',
           bottom: '40px',
-          right: '40px',
+          right: '16px',
           padding: '10px 20px',
           fontSize: '16px',
           backgroundColor: '#333',
