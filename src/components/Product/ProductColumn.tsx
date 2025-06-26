@@ -77,7 +77,7 @@ const ProductColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
     <>
       <div
         className={clsx(
-          "group flex flex-col justify-between w-3/4 h-[550px] max-w-sm mx-auto bg-white rounded-xl border border-[#E5E5E5] lg:max-w-full relative transition-transform duration-200 hover:scale-105 hover:shadow-2xl hover:border-[#2C742F] hover:shadow-[#2C742F]",
+          "group flex flex-col justify-between w-[410px] h-[550px] max-w-sm mx-auto bg-white rounded-xl border border-[#E5E5E5] lg:max-w-full relative transition-transform duration-200 hover:scale-105 hover:shadow-2xl hover:border-[#2C742F] hover:shadow-[#2C742F]",
           {
             "shadow-lg": highlight,
           },

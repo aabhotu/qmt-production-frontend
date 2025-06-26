@@ -11,7 +11,7 @@ const ProductsPage: React.FC = () => {
   return (
     <div
       id="products"
-      className="py-20 px-4 bg-gradient-to-b from-white via-[#f5fff7] to-white"
+      className="py-20 px-24 bg-[#EDF2EE] from-white via-[#f5fff7] to-white"
     >
       {/* Title Section */}
       <motion.div
@@ -21,7 +21,7 @@ const ProductsPage: React.FC = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <motion.h2
-          className="text-center mb-4 text-4xl lg:text-6xl font-extrabold text-gray-900 tracking-tight drop-shadow-md"
+          className="text-center mb-4 text-4xl lg:text-6xl font-bold text-gray-900 tracking-tight drop-shadow-md"
           initial={{ scale: 0.95, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
