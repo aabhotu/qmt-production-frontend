@@ -28,7 +28,7 @@ const ProjectPage: React.FC = () => {
   return (
     <Section id="projects" title="" description="">
       <motion.div
-        className="bg-gradient-to-br from-blue-50 via-white to-gray-100 py-16 px-4 md:px-8 lg:px-16 rounded-xl shadow-xl backdrop-blur-sm"
+        className="bg-[#EDF2EE] from-blue-50 via-white to-gray-100 py-16 px-4 md:px-8 lg:px-16 rounded-xl shadow-xl backdrop-blur-sm"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 // Animation variants
 const containerVariants = {
@@ -42,7 +43,7 @@ const ContactPage: React.FC = () => {
   return (
     <section
       id="contact"
-      className="py-20 bg-gradient-to-br from-blue-100 via-white to-indigo-50 shadow-inner"
+      className="py-20 bg-[#EDF2EE] from-blue-100 via-white to-indigo-50 shadow-inner"
     >
       <motion.div
         className="container mx-auto px-6"
@@ -53,7 +54,7 @@ const ContactPage: React.FC = () => {
       >
         {/* Heading */}
         <motion.h2
-          className="text-4xl md:text-5xl font-extrabold text-center text-indigo-700 mb-6 uppercase tracking-wider"
+          className="text-4xl md:text-5xl font-bold text-center text-[#00B207] mb-6 uppercase tracking-wider"
           variants={fadeInUp}
         >
           Liên hệ với chúng tôi
@@ -63,7 +64,7 @@ const ContactPage: React.FC = () => {
           className="text-lg md:text-2xl text-center text-slate-700 font-medium mb-12 max-w-3xl mx-auto leading-relaxed"
           variants={fadeInUp}
         >
-          Công Ty Cổ Phần Sản Xuất Và Ứng Dụng Công Nghệ Quang Minh
+          Công ty Cổ phần Sản xuất và Ứng dụng Công nghệ Quang Minh
         </motion.h4>
 
         {/* Map */}
@@ -89,23 +90,23 @@ const ContactPage: React.FC = () => {
         >
           {[
             {
-              icon: "🏠",
+              icon: "/images/Home1.svg",
               title: "Trụ sở chính",
               content:
                 "Số nhà 20A, Tổ 8, Phường Chùa Hang, TP Thái Nguyên, Tỉnh Thái Nguyên",
             },
             {
-              icon: "📍",
+              icon: "/images/Location.svg",
               title: "Chi nhánh miền Nam",
               content: "Long Đức 2, Tam Phước, Biên Hoà, Đồng Nai",
             },
             {
-              icon: "📞",
+              icon: "/images/Call.svg",
               title: "Hotline",
               content: "0825098189 - 0919340925",
             },
             {
-              icon: "✉️",
+              icon: "/images/Mail.svg",
               title: "Email",
               content: "congtyquangminh20a@gmail.com",
             },
@@ -115,15 +116,18 @@ const ContactPage: React.FC = () => {
               variants={fadeInUp}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
-              className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl border-t-4 border-indigo-500 transition-all duration-300 text-center"
+              className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl border-t-4 border-[#84D187] transition-all duration-300 text-center"
             >
-              <div className="text-4xl mb-3 bg-indigo-100 text-indigo-600 rounded-full p-3 w-fit mx-auto shadow-sm">
-                {item.icon}
+              <div className="text-4xl mb-3  rounded-full p-3 w-fit mx-auto shadow-sm">
+                {/* {item.icon} */}
+                 {item.icon.startsWith("/") ? (
+                   <Image src={item.icon} width={56} height={62} alt={item.title} />
+                 ) : item.icon}
               </div>
-              <h5 className="font-bold text-lg text-indigo-700 uppercase mb-2">
+              <h5 className="font-medium  text-lg text-[#00B207] uppercase mb-2">
                 {item.title}
               </h5>
-              <p className="text-gray-700 font-medium">{item.content}</p>
+              <p className="text-gray-700 font-normal">{item.content}</p>
             </motion.div>
           ))}
         </motion.div>
