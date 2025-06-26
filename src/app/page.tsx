@@ -9,7 +9,7 @@ import ForePage from "@/components/ForePage";
 
 const HomePage: React.FC = () => {
   return (
-    <>
+    <div className="w-full overflow-x-hidden">
       <ForePage />
       {/* <Logos /> */}
       {/* <Container> */}
@@ -29,7 +29,7 @@ const HomePage: React.FC = () => {
 
         {/* <CTA /> */}
       {/* </Container> */}
-    </>
+    </div>
   );
 };
 
