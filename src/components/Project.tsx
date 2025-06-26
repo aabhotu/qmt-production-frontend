@@ -44,10 +44,10 @@ const Project: React.FC = () => {
 
           <div className="p-4 text-center lg:text-left">
             <h3
-              className={`font-semibold ${
+              className={`font-medium ${
                 project.name === "Bowdershaw"
                   ? "text-red-600 text-xl"
-                  : "text-blue-700 text-lg"
+                  : "text-[#2C742F] text-lg"
               }`}
             >
               {project.name}
