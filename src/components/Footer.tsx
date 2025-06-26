@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
             </h3>
           </Link>
           <p className="text-[#618062] text-base leading-relaxed">
-            {footerDetails.subheading}
+            Thương hiệu sơn nước uy tín, mang đến giải pháp sơn và chống thấm bền đẹp, chất lượng cao cho mọi công trình.
           </p>
         </div>
 
@@ -65,11 +65,11 @@ const Footer: React.FC = () => {
             </a>
           )}
 
-          {footerDetails.address && (
+          {/* {footerDetails.address && (
             <p className="text-base text-[#618062]">
               <span className="font-semibold">Địa chỉ:</span> {footerDetails.address}
             </p>
-          )}
+          )} */}
         </div>
 
         {/* Cột 3: Showroom & Nhà máy */}
