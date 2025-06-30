@@ -36,7 +36,7 @@ const ForePage: React.FC = () => {
 
   return (
     <div>
-      <section
+      {/* <section
         id="mainPage"
         className="relative flex items-center justify-center pb-0 pt-16 md:pt-16 px-5"
       >
@@ -48,7 +48,7 @@ const ForePage: React.FC = () => {
             {forePageDetails.subheading}
           </p>
         </div>
-      </section>
+      </section> */}
       <div className="mb-16 relative h-auto">
         <Slider {...settings}>
           <Image
@@ -61,7 +61,7 @@ const ForePage: React.FC = () => {
             priority={true}
             unoptimized={true}
             alt="app mockup"
-            className="relative mt-12 md:mt-16 mx-auto z-10"
+            className="relative mt-4 md:mt-6 mx-auto z-10"
           />
           <Image
             key={"1"}
@@ -73,7 +73,19 @@ const ForePage: React.FC = () => {
             priority={false}
             unoptimized={true}
             alt="app mockup"
-            className="relative mt-12 md:mt-16 mx-auto z-10"
+            className="relative mt-4 md:mt-6 mx-auto z-10"
+          />
+          <Image
+            key={"2"}
+            src={forePageDetails.centerImageSrc[2]}
+            width={width}
+            height={10}
+            quality={100}
+            sizes="100vw"
+            priority={false}
+            unoptimized={true}
+            alt="app mockup"
+            className="relative mt-4 md:mt-6 mx-auto z-10"
           />
         </Slider>
       </div>

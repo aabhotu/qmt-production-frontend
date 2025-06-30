@@ -8,7 +8,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import Container from "./Container";
-import { siteDetails } from "@/data/siteDetails";
+// import { siteDetails } from "@/data/siteDetails";
 import { menuItems } from "@/data/menuItems";
 
 const Header: React.FC = () => {
@@ -38,16 +38,16 @@ const Header: React.FC = () => {
           <div className="flex items-center space-x-3">
             <Link href="/" className="flex items-center space-x-2">
               <Image
-                src="/images/logo.ico"
+                src="/images/logo.jpg"
                 alt="icon"
-                width={40}
-                height={40}
+                width={180}
+                height={50}
                 quality={100}
                 className="object-contain"
               />
-              <span className="text-2xl md:text-3xl font-bold text-black">
+              {/* <span className="text-2xl md:text-3xl font-bold text-black">
                 {siteDetails.siteName}
-              </span>
+              </span> */}
             </Link>
             <span className="hidden lg:inline text-base font-medium text-gray-600 leading-tight">
               CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ỨNG DỤNG CÔNG NGHỆ QUANG MINH

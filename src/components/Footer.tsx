@@ -14,7 +14,7 @@ import FloatingButtons from "./ui/FloatingButtons";
 
 const Footer: React.FC = () => {
   return (
-    <footer id="contact" className="bg-[#002603] text-gray-800 py-6">
+    <footer id="contact" className="bg-[#003306] text-gray-800 py-6">
       <div className="max-w-[1500px] mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10 mb-4">
 
         {/* Cột 1: Thông tin thương hiệu */}
