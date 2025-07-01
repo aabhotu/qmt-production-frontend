@@ -18,22 +18,22 @@ const Footer: React.FC = () => {
       <div className="max-w-[1500px] mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10 mb-4">
 
         {/* Cột 1: Thông tin thương hiệu */}
-        <div className="space-y-4">
+        <div className="space-y-4 self-center">
           <Link href="#contact" className="flex items-center gap-2">
             <Image
-              src="/images/logo.ico"
+              src="/images/logo_1.png"
               alt="icon"
-              width={28}
-              height={28}
+              width={333}
+              height={108}
               quality={100}
             />
-            <h3 className="text-2xl font-bold tracking-wide text-white">
+            {/* <h3 className="text-2xl font-bold tracking-wide text-white">
               {siteDetails.siteName}
-            </h3>
+            </h3> */}
           </Link>
-          <p className="text-[#618062] text-base leading-relaxed">
+          {/* <p className="text-[#618062] text-base leading-relaxed">
             Thương hiệu sơn nước uy tín, mang đến giải pháp sơn và chống thấm bền đẹp, chất lượng cao cho mọi công trình.
-          </p>
+          </p> */}
         </div>
 
         {/* Cột 2: Liên hệ */}

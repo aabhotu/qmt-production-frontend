@@ -38,7 +38,7 @@ const Header: React.FC = () => {
           <div className="flex items-center space-x-3">
             <Link href="/" className="flex items-center space-x-2">
               <Image
-                src="/images/logo.jpg"
+                src="/images/logo_1.png"
                 alt="icon"
                 width={180}
                 height={50}
@@ -49,7 +49,7 @@ const Header: React.FC = () => {
                 {siteDetails.siteName}
               </span> */}
             </Link>
-            <span className="hidden lg:inline text-base font-medium text-gray-600 leading-tight">
+            <span className="hidden lg:inline text-semibold font-medium text-gray-800 leading-tight">
               CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ỨNG DỤNG CÔNG NGHỆ QUANG MINH
             </span>
           </div>
