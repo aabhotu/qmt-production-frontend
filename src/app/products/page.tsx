@@ -11,7 +11,7 @@ const ProductsPage: React.FC = () => {
   return (
     <div
       id="products"
-      className="py-20 px-24 bg-[#EDF2EE] from-white via-[#f5fff7] to-white"
+      className="py-20 md:px-24 bg-[#EDF2EE] from-white via-[#f5fff7] to-white"
     >
       {/* Title Section */}
       <motion.div
