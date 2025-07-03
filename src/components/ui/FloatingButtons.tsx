@@ -7,7 +7,7 @@ const FloatingButtons = () => {
     <div className="fixed bottom-24 right-4 flex flex-col items-end space-y-3 z-50">
       {/* Gọi điện */}
       <a
-        href="tel:0919340925"
+        href="tel:0825098189"
         className="w-12 h-12 flex items-center justify-center rounded-full bg-red-600 text-white shadow-lg hover:scale-110 transition"
         title="Gọi điện"
       >
@@ -27,7 +27,7 @@ const FloatingButtons = () => {
 
       {/* Zalo */}
       <a
-        href="https://zalo.me/0919340925"
+        href="https://zalo.me/0825098189"
         target="_blank"
         className="w-12 h-12 flex items-center justify-center rounded-full bg-[#0084ff] text-white shadow-lg hover:scale-110 transition text-sm font-bold"
         title="Zalo"
