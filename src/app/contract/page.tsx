@@ -194,7 +194,7 @@ const ContactPage: React.FC = () => {
               <h5 className="font-medium text-lg text-[#00B207] uppercase mb-2">
                 {item.title}
               </h5>
-              <p className="text-gray-700 font-normal">{item.content}</p>
+              <p className="text-gray-700 font-normal break-words">{item.content}</p>
             </motion.div>
           ))}
         </div>

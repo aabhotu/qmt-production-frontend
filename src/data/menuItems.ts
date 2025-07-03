@@ -2,23 +2,23 @@ import { IMenuItem } from "@/types";
 
 export const menuItems: IMenuItem[] = [
   {
-    text: "Trang chủ",
+    text: "TRANG CHỦ",
     url: "/",
   },
   {
-    text: "Giới thiệu",
+    text: "GIỚI THIỆU",
     url: "/intro",
   },
   {
-    text: "Sản phẩm",
+    text: "SẢN PHẦM",
     url: "/products",
   },
   {
-    text: "Dự án",
+    text: "DỰ ÁN",
     url: "/project",
   },
   {
-    text: "Liên hệ",
+    text: "LIÊN HỆ",
     url: "/contract",
   },
 ];

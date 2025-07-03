@@ -19,9 +19,10 @@ export const products: IProduct[] = [
       ],
     },
     description:
-      "Để đạt hiệu quả thi công tốt nhất – bề mặt mịn, kết dính cao, lên nước đẹp – vui lòng thực hiện đúng các bước sau:",
+      "Vữa xoa tường VIKKO là giải pháp hoàn thiện bề mặt tường tối ưu, giúp tạo lớp nền phẳng, độ mịn, tăng độ bám dính cho lớp sơn phủ sau này. Sản phẩm được sản xuất theo công thức cải tiến, dễ thi công, ít co ngót, chống rạn nứt, phù hợp cho cả công trình dân dụng và công nghiệp.",
     features: [
       {
+        intro:"Để đạt hiệu quả thi công tốt nhất – bề mặt mịn, kết dính cao, lên nước đẹp – vui lòng thực hiện đúng các bước sau:",
         title: "BƯỚC 1: CHUẨN BỊ BỀ MẶT TƯỜNG",
         contents: [
           {
