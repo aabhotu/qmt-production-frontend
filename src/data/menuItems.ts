@@ -10,7 +10,7 @@ export const menuItems: IMenuItem[] = [
     url: "/intro",
   },
   {
-    text: "SẢN PHẦM",
+    text: "SẢN PHẨM",
     url: "/products",
   },
   {
