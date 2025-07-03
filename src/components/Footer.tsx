@@ -1,22 +1,21 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
 // import { FaFingerprint } from "react-icons/fa";
-import Image from "next/image";
-import { FiMapPin } from "react-icons/fi";
+import Image from 'next/image';
+import { FiMapPin } from 'react-icons/fi';
 
-import { siteDetails } from "@/data/siteDetails";
-import { footerDetails } from "@/data/footer";
-import BackToTopButton from "./ui/ScrollToTop";
-import FloatingButtons from "./ui/FloatingButtons";
+import { siteDetails } from '@/data/siteDetails';
+import { footerDetails } from '@/data/footer';
+import BackToTopButton from './ui/ScrollToTop';
+import FloatingButtons from './ui/FloatingButtons';
 // import { getPlatformIconByName } from "@/utils";
 
 const Footer: React.FC = () => {
   return (
     <footer id="contact" className="bg-[#003306] text-gray-800 py-6">
       <div className="max-w-[1500px] mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10 mb-4">
-
         {/* Cột 1: Thông tin thương hiệu */}
         <div className="space-y-4 self-center">
           <Link href="#contact" className="flex items-center gap-2">
@@ -26,6 +25,7 @@ const Footer: React.FC = () => {
               width={333}
               height={108}
               quality={100}
+              className="animate-spinY"
             />
             {/* <h3 className="text-2xl font-bold tracking-wide text-white">
               {siteDetails.siteName}
@@ -74,9 +74,7 @@ const Footer: React.FC = () => {
 
         {/* Cột 3: Showroom & Nhà máy */}
         <div className="space-y-5">
-          <h4 className="text-xl font-semibold text-white">
-            Địa chỉ Showroom / Nhà máy
-          </h4>
+          <h4 className="text-xl font-semibold text-white">Địa chỉ Showroom / Nhà máy</h4>
 
           <div>
             <div className="flex items-center gap-2 text-white">
@@ -99,50 +97,50 @@ const Footer: React.FC = () => {
       </div>
       <FloatingButtons />
       <div className="fixed bottom-4 right-4 z-40">
-      <BackToTopButton />
-</div>
+        <BackToTopButton />
+      </div>
 
-      <hr className="max-w-[1500px] mx-auto px-4 border-t border-[#1D421B]"/>
+      <hr className="max-w-[1500px] mx-auto px-4 border-t border-[#1D421B]" />
       <div className=" flex md:flex-row max-w-[1500px] mx-auto mt-6 text-center text-[#618062] text-base justify-between items-center">
         <div className="hidden md:flex space-x-1 md">
-          <Image 
+          <Image
             src="/images/Social Media.svg"
             width={40}
             height={40}
-            key={"0"}
+            key={'0'}
             quality={100}
             priority={true}
             unoptimized={true}
             alt="img"
             className=""
           />
-          <Image 
+          <Image
             src="/images/Social Media (1).svg"
             width={40}
             height={40}
-            key={"0"}
+            key={'0'}
             quality={100}
             priority={true}
             unoptimized={true}
             alt="img"
             className=""
           />
-          <Image 
+          <Image
             src="/images/Pinterest.svg"
             width={40}
             height={40}
-            key={"0"}
+            key={'0'}
             quality={100}
             priority={true}
             unoptimized={true}
             alt="img"
             className=""
           />
-          <Image 
+          <Image
             src="/images/Ins.svg"
             width={40}
             height={40}
-            key={"0"}
+            key={'0'}
             quality={100}
             priority={true}
             unoptimized={true}
@@ -151,72 +149,71 @@ const Footer: React.FC = () => {
           />
         </div>
         <div className="mx-auto text-center">
-        <p>
-          &copy; {new Date().getFullYear()} {siteDetails.siteName}. All rights reserved.
-        </p>
+          <p>
+            &copy; {new Date().getFullYear()} {siteDetails.siteName}. All rights reserved.
+          </p>
         </div>
         <div className="hidden md:flex space-x-1">
-          <Image 
+          <Image
             src="/images/ApplePay.svg"
             width={0}
             height={0}
             style={{ height: 'auto', width: 'auto' }}
-            key={"0"}
+            key={'0'}
             quality={100}
             priority={true}
             unoptimized={true}
             alt="img"
             className=""
           />
-          <Image 
+          <Image
             src="/images/Visa.svg"
             width={0}
             height={0}
             style={{ height: 'auto', width: 'auto' }}
-            key={"0"}
+            key={'0'}
             quality={100}
             priority={true}
             unoptimized={true}
             alt="img"
             className=""
           />
-          <Image 
+          <Image
             src="/images/Discover.svg"
             width={0}
             height={0}
             style={{ height: 'auto', width: 'auto' }}
-            key={"0"}
+            key={'0'}
             quality={100}
             priority={true}
             unoptimized={true}
             alt="img"
             className=""
           />
-          <Image 
+          <Image
             src="/images/Mastercard.svg"
             width={0}
             height={0}
             style={{ height: 'auto', width: 'auto' }}
-            key={"0"}
+            key={'0'}
             quality={100}
             priority={true}
             unoptimized={true}
             alt="img"
             className=""
           />
-          <Image 
+          <Image
             src="/images/Cart.svg"
             width={0}
             height={0}
             style={{ height: 'auto', width: 'auto' }}
-            key={"0"}
+            key={'0'}
             quality={100}
             priority={true}
             unoptimized={true}
             alt="img"
             className=""
           />
-         
         </div>
       </div>
     </footer>

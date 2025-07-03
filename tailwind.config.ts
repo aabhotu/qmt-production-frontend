@@ -21,6 +21,16 @@ const config: Config = {
         backgroundImage: {
     'project-gradient': 'linear-gradient(to right, #f0f4ff, #ffffff)',
   },
+      keyframes: {
+        spinY: {
+          '0%': { transform: 'rotateY(0deg)' },
+          '100%': { transform: 'rotateY(360deg)' },
+        },
+      },
+animation: {
+  spinY: 'spinY 3s linear infinite',
+  spinYSlow: 'spinY 6s linear infinite',
+}
     },
   },
   plugins: [],
