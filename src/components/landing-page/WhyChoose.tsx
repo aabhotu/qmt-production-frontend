@@ -18,7 +18,7 @@ const reasons = [
     title: 'Giao hàng đúng tiến độ – Hỗ trợ kỹ thuật tận tâm',
     description:
       'Với hệ thống kho và vận chuyển riêng, VIKKO đảm bảo giao hàng nhanh, đúng số lượng – đúng chủng loại. Đội ngũ kỹ thuật luôn sẵn sàng tư vấn giải pháp phù hợp nhất cho từng công trình.',
-    image: 'images/why3.png',
+    image: 'images/why3.jpg',
   },
 ];
 
