@@ -27,7 +27,7 @@ const WhyChooseVikko = () => {
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-6">
-          Tại sao nên chọn <span className="text-teal-600">VIKKO</span>?
+          Tại sao nên chọn <span className="text-[#00B207]">VIKKO</span>?
         </h2>
         <p className="text-center text-gray-600 mb-16 leading-relaxed">
           VIKKO – Giải pháp vật liệu xây dựng đáng tin cậy. <br />
@@ -45,7 +45,7 @@ const WhyChooseVikko = () => {
               {/* Nội dung */}
               <div className="md:w-1/2 space-y-4">
                 <div className="flex items-start gap-3">
-                  <CheckCircleIcon className="w-6 h-6 text-teal-600 flex-shrink-0" />
+                  <CheckCircleIcon className="w-6 h-6 text-[#00B207] flex-shrink-0" />
                   <h3 className="text-xl font-semibold">{reason.title}</h3>
                 </div>
                 <p className="text-gray-600 text-base">{reason.description}</p>
