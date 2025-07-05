@@ -30,6 +30,7 @@ export interface IProduct {
 export interface SubFeature {
   title: string;
   intro?: string;
+  subject?: string;
   contents: SubFeatureContent[];
 }
 

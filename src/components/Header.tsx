@@ -49,7 +49,7 @@ const Header: React.FC = () => {
                 {siteDetails.siteName}
               </span> */}
             </Link>
-            <span className="hidden lg:inline text-semibold font-medium text-gray-800 leading-tight">
+            <span className="hidden lg:inline font-bold text-gray-800 leading-tight">
               CÔNG TY CỔ PHẦN SẢN XUẤT VÀ ỨNG DỤNG CÔNG NGHỆ QUANG MINH
             </span>
           </div>

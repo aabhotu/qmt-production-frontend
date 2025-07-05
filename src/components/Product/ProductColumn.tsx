@@ -248,12 +248,14 @@ const ProductColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
                           subFeature: {
                             title: string;
                             intro?: string;
+                            subject?: string;
                             contents: SubFeatureContent[];
                           },
                           idx: number,
                         ) => (
                           <div key={idx}>
-                            {subFeature.intro && <div className="space-y-2 text-gray-700 text-left text-base">{subFeature.intro}</div>}
+                            {subFeature.subject && <div className="mb-2 text-lg text-gray-700 font-medium">{subFeature.subject}</div>}
+                            {subFeature.intro && <div className="space-y-2 text-gray-700 text-left text-base mb-4">{subFeature.intro}</div>}
                             <div className="font-semibold text-primary mb-2 text-lg">
                               {subFeature.title}
                             </div>
