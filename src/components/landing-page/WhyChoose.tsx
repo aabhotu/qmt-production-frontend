@@ -12,13 +12,13 @@ const reasons = [
     title: 'Báo giá minh bạch – Chiết khấu tốt',
     description:
       'VIKKO xây dựng chính sách giá linh hoạt: giá cạnh tranh, chiết khấu hấp dẫn cho đại lý và công trình lớn, hỗ trợ vận chuyển – thanh toán linh hoạt.',
-    image: 'images/reason2.png',
+    image: 'images/why2.png',
   },
   {
     title: 'Giao hàng đúng tiến độ – Hỗ trợ kỹ thuật tận tâm',
     description:
       'Với hệ thống kho và vận chuyển riêng, VIKKO đảm bảo giao hàng nhanh, đúng số lượng – đúng chủng loại. Đội ngũ kỹ thuật luôn sẵn sàng tư vấn giải pháp phù hợp nhất cho từng công trình.',
-    image: 'images/reason3.png',
+    image: 'images/why3.png',
   },
 ];
 
