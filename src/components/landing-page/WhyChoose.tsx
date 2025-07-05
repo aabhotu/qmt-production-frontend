@@ -24,12 +24,12 @@ const reasons = [
 
 const WhyChooseVikko = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-20 bg-green-50">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-6">
-          Tại sao nên chọn <span className="text-[#00B207]">VIKKO</span>?
+        <h2 className="text-4xl font-bold text-center mb-6">
+          Tại sao nên chọn <span className="text-[#ff3434]">VIKKO</span>?
         </h2>
-        <p className="text-center text-gray-600 mb-16 leading-relaxed">
+        <p className="text-center text-gray-600 mb-16 leading-relaxed text-lg">
           VIKKO – Giải pháp vật liệu xây dựng đáng tin cậy. <br />
           Khi lựa chọn vật liệu xây dựng cho công trình, chất lượng – giá cả – tiến độ luôn là 3 yếu
           tố then chốt. Và đó cũng chính là lý do VIKKO được hàng trăm nhà thầu, kỹ sư và chủ công
@@ -48,7 +48,7 @@ const WhyChooseVikko = () => {
                   <CheckCircleIcon className="w-6 h-6 text-[#00B207] flex-shrink-0" />
                   <h3 className="text-xl font-semibold">{reason.title}</h3>
                 </div>
-                <p className="text-gray-600 text-base">{reason.description}</p>
+                <p className="text-gray-600 text-lg">{reason.description}</p>
               </div>
 
               {/* Ảnh */}

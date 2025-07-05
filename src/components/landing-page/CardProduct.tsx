@@ -18,7 +18,7 @@ const CardProduct: React.FC<CardProductProps> = ({ image, title, description }) 
       </div>
 
       <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3">{title}</h3>
-      <p className="text-gray-600 text-sm leading-relaxed flex-grow">{description}</p>
+      <p className="text-gray-600 text-xm leading-relaxed flex-grow">{description}</p>
     </div>
   );
 };
