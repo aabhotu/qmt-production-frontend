@@ -4,8 +4,19 @@ import { CheckCircleIcon } from '@heroicons/react/24/solid';
 const reasons = [
   {
     title: 'Sản phẩm chất lượng – Đạt chuẩn kiểm định',
-    description:
-      'Từ sơn nội ngoại thất, bột trét, keo dán gạch đến xi măng và vật liệu hoàn thiện, tất cả sản phẩm của VIKKO đều có chứng nhận chất lượng rõ ràng, độ bền cao và phù hợp với điều kiện thi công thực tế tại Việt Nam.',
+    description: `Toàn bộ sản phẩm VIKKO đều được kiểm định chất lượng, có chứng nhận rõ ràng, độ bền cao và phù hợp với điều kiện thi công thực tế tại Việt Nam.
+
+                  Danh mục sản phẩm bao gồm:\n
+
+                  ✅ Sơn nội – ngoại thất: Bền màu, chống thấm, chống bong tróc.\n
+
+                  ✅ Vữa xoa tường: Mịn, bám dính tốt, giúp bề mặt phẳng đẹp.\n
+
+                  ✅ Keo dán gạch: Bám dính cao, chống trượt, chống thấm hiệu quả.\n
+
+                  ✅ Vật liệu hoàn thiện khác: Ổn định, chất lượng, thi công linh hoạt.\n
+
+                  Sản phẩm VIKKO – lựa chọn đáng tin cậy cho mọi công trình.`,
     image: 'images/chung_nhan.png',
   },
   {
@@ -18,7 +29,7 @@ const reasons = [
     title: 'Giao hàng đúng tiến độ – Hỗ trợ kỹ thuật tận tâm',
     description:
       'Với hệ thống kho và vận chuyển riêng, VIKKO đảm bảo giao hàng nhanh, đúng số lượng – đúng chủng loại. Đội ngũ kỹ thuật luôn sẵn sàng tư vấn giải pháp phù hợp nhất cho từng công trình.',
-    image: 'images/why3.jpg',
+    image: 'images/why3.png',
   },
 ];
 
@@ -48,7 +59,11 @@ const WhyChooseVikko = () => {
                   <CheckCircleIcon className="w-6 h-6 text-[#00B207] flex-shrink-0" />
                   <h3 className="text-xl font-semibold">{reason.title}</h3>
                 </div>
-                <p className="text-gray-600 text-lg">{reason.description}</p>
+                {reason.description.split('\n').map((line, idx) => (
+                  <p key={idx} className="text-lg text-gray-700 leading-tight mb-1">
+                    {line}
+                  </p>
+                ))}
               </div>
 
               {/* Ảnh */}
