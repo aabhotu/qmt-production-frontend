@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import React from "react";
-import Image from "next/image";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from 'react';
+import Image from 'next/image';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-import { forePageDetails } from "@/data/forePage";
-import { useState, useEffect } from "react";
+import { forePageDetails } from '@/data/forePage';
+import { useState, useEffect } from 'react';
 
 const ForePage: React.FC = () => {
   const [width, setWidth] = useState(1200); // Default fallback width
@@ -18,9 +18,9 @@ const ForePage: React.FC = () => {
 
     // Optional: Update on resize
     const handleResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    console.log('width: ', width)
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
+    console.log('width: ', width);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   const settings = {
@@ -52,7 +52,7 @@ const ForePage: React.FC = () => {
       <div className="mb-16 relative h-auto">
         <Slider {...settings}>
           <Image
-            key={"0"}
+            key={'0'}
             src={forePageDetails.centerImageSrc[0]}
             width={width}
             height={10}
@@ -64,7 +64,7 @@ const ForePage: React.FC = () => {
             className="relative mt-4 md:mt-6 mx-auto z-10"
           />
           <Image
-            key={"1"}
+            key={'1'}
             src={forePageDetails.centerImageSrc[1]}
             width={width}
             height={10}
@@ -76,7 +76,7 @@ const ForePage: React.FC = () => {
             className="relative mt-4 md:mt-6 mx-auto z-10"
           />
           <Image
-            key={"2"}
+            key={'2'}
             src={forePageDetails.centerImageSrc[2]}
             width={width}
             height={10}

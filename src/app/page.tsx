@@ -1,34 +1,16 @@
-import ForePage from "@/components/ForePage";
-// import Project from "@/components/Project";
-// import FAQ from "@/components/FAQ";
-// import Logos from "@/components/Logos";
-// import Container from "@/components/Container";
-// import Section from "@/components/Section";
-// import Stats from "@/components/Stats";
-// import CTA from "@/components/CTA";
+import ForePage from '@/components/ForePage';
+import ProductList from '@/components/landing-page/ProductList';
+import WhyChooseVikko from '@/components/landing-page/WhyChoose';
 
 const HomePage: React.FC = () => {
   return (
-    <div className="w-full overflow-x-hidden">
+    <div className="w-full overflow-x-hidden flex flex-col">
       <ForePage />
-      {/* <Logos /> */}
-      {/* <Container> */}
-        {/* <Intro /> */}
 
-        {/* <Section id="products" title="Sản Phẩm" description="">
-          <Product />
-        </Section> */}
-
-        {/* <Section id="projects" title="Các dự án tiêu biểu" description="">
-          <Project />
-        </Section> */}
-
-        {/* <FAQ /> */}
-
-        {/* <Stats /> */}
-
-        {/* <CTA /> */}
-      {/* </Container> */}
+      <div className="flex flex-col items-center max-w-[1280px] mx-auto px-4 md:px-8 gap-y-12">
+        <ProductList />
+      </div>
+      <WhyChooseVikko />
     </div>
   );
 };
