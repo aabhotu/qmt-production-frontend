@@ -21,7 +21,7 @@ const products = [
   },
   {
     image: 'images/chong_tham_dan_hoi.jpg',
-    title: 'Chất chống thấm đàn hồi VIKKO',
+    title: 'Chống thấm đàn hồi VIKKO',
     description:
       'Hợp chất chống thấm đàn hồi cao, bảo vệ bề mặt khỏi nước và môi trường khắc nghiệt. Phù hợp cho cả trong nhà và ngoài trời.',
   },
