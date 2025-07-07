@@ -34,10 +34,10 @@ const IntroComp: React.FC = () => {
   return (
     <motion.div
       id="about"
-      className="py-16 bg-[#EDF2EE] scroll-smooth"
+      className="min-h-screen py-16 bg-[#EDF2EE] scroll-smooth"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.1 }}
       variants={containerVariants}
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
