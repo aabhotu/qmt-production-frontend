@@ -105,6 +105,7 @@ const IntroSection: React.FC<Props> = ({ benefit, imageAtRight }: Props) => {
               height="1024"
               quality={100}
               className="lg:ml-0"
+              unoptimized={true}
             />
           </div>
         </div>

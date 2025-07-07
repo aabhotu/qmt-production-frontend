@@ -69,6 +69,7 @@ const Project: React.FC = () => {
               alt={project.name}
               width={500}
               height={300}
+              unoptimized={true}
               className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110 group-hover:rotate-1"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500"></div>

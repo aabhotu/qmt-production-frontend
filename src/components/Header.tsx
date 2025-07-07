@@ -4,7 +4,6 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { HiOutlineXMark, HiBars3 } from "react-icons/hi2";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import Container from "./Container";
@@ -22,7 +21,7 @@ const Header: React.FC = () => {
   // ✅ Class cho menu item (có underline + hover effect)
   const getLinkClass = (url: string) =>
     `relative font-semibold transition-all duration-300 ease-in-out 
-    after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] 
+    after:content-[""] after:absolute after:left-0 after:-bottom-1 after:h-[2px] 
     after:bg-[#00B207] after:transition-all after:duration-300 after:ease-in-out 
     ${
       pathname === url
@@ -37,14 +36,19 @@ const Header: React.FC = () => {
           {/* Logo & Slogan */}
           <div className="flex items-center space-x-3">
             <Link href="/" className="flex items-center space-x-2">
-              <Image
+              {/* <Image
                 src="/images/logo_1.png"
                 alt="icon"
                 width={180}
                 height={50}
                 quality={100}
+                unoptimized={true}
                 className="object-contain"
-              />
+              /> */}
+              <img src="/images/logo_1.png" alt="icon"
+                width={180}
+                height={50}
+                className="object-contain"/>
               {/* <span className="text-2xl md:text-3xl font-bold text-black">
                 {siteDetails.siteName}
               </span> */}

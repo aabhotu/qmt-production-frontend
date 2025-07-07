@@ -19,14 +19,20 @@ const Footer: React.FC = () => {
         {/* Cột 1: Thông tin thương hiệu */}
         <div className="space-y-4 self-center">
           <Link href="#contact" className="flex items-center gap-2">
-            <Image
+            {/* <Image
               src="/images/logo_1.png"
               alt="icon"
               width={333}
               height={108}
               quality={100}
+              unoptimized={true}
               className="animate-spinY"
-            />
+            /> */}
+            <img src="/images/logo_1.png"
+              alt="icon"
+              width={333}
+              height={108}
+              className="animate-spinY"/>
             {/* <h3 className="text-2xl font-bold tracking-wide text-white">
               {siteDetails.siteName}
             </h3> */}
