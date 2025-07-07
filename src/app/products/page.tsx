@@ -21,7 +21,7 @@ const ProductsPage: React.FC = () => {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Sản Phẩm
+          SẢN PHẨM
         </motion.h2>
 
         {/* Thanh trang trí */}

@@ -48,7 +48,7 @@ const IntroComp: React.FC = () => {
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-          Giới thiệu
+          GIỚI THIỆU
         </motion.h2>
 
         {/* Đoạn text giới thiệu */}

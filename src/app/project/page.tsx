@@ -44,7 +44,7 @@ const ProjectPage: React.FC = () => {
             variants={fadeInUp}
             custom={0}
           >
-            Dự án tiêu biểu
+            DỰ ÁN TIÊU BIỂU
           </motion.h2>
 
           <div className="text-gray-800 text-lg leading-relaxed space-y-5 text-justify">
