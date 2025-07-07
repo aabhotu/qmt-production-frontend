@@ -137,7 +137,7 @@ const ContactPage: React.FC = () => {
         {/* Title */}
         <h2
           ref={titleRef}
-          className="text-4xl md:text-5xl font-bold text-center text-[#00B207] mb-6 uppercase tracking-wider"
+          className="text-4xl lg:text-5xl font-bold text-center text-[#00B207] mb-6 uppercase tracking-wider"
         >
           Liên hệ với chúng tôi
         </h2>

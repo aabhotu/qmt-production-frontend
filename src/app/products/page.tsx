@@ -15,7 +15,7 @@ const ProductsPage: React.FC = () => {
         transition={{ duration: 0.6, ease: 'easeOut' }}
       >
         <motion.h2
-          className="text-center mb-4 text-4xl lg:text-6xl font-bold text-gray-900 tracking-tight"
+          className="text-center mb-4 text-4xl  lg:text-5xl font-bold text-gray-900 tracking-tight"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}

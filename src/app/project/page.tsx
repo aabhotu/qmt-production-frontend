@@ -37,7 +37,7 @@ const ProjectPage: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto flex flex-col gap-10">
           <motion.h2
-            className="text-4xl font-bold text-gray-900 text-center"
+            className="text-4xl lg:text-5xl font-bold text-gray-900 text-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
