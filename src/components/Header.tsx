@@ -14,6 +14,9 @@ const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
+  const normalizePath = (path: string) =>
+  path !== '/' && path.endsWith('/') ? path.slice(0, -1) : path;
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -24,7 +27,7 @@ const Header: React.FC = () => {
     after:content-[""] after:absolute after:left-0 after:-bottom-1 after:h-[2px] 
     after:bg-[#00B207] after:transition-all after:duration-300 after:ease-in-out 
     ${
-      pathname === url
+      normalizePath(pathname) === url
         ? "text-[#00B207] font-bold after:w-full"
         : "text-gray-800 hover:text-[#2C742F] after:w-0"
     }`;
