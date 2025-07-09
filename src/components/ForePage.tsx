@@ -87,6 +87,18 @@ const ForePage: React.FC = () => {
             alt="app mockup"
             className="relative mt-4 md:mt-6 mx-auto z-10"
           />
+          <Image
+            key={'3'}
+            src={forePageDetails.centerImageSrc[3]}
+            width={width}
+            height={10}
+            quality={100}
+            sizes="100vw"
+            priority={false}
+            unoptimized={true}
+            alt="app mockup"
+            className="relative mt-4 md:mt-6 mx-auto z-10"
+          />
         </Slider>
       </div>
     </div>
